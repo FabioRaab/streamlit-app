@@ -16,7 +16,7 @@ from datetime import datetime
 home_path = str(Path.home())
 
 # Data import
-df = pd.read_csv(home_path + "/streamlit-app/data/covid.csv")
+df = pd.read_csv(home_path + "/documents/Uni Projekte/GitHub/streamlit-app/data/covid.csv")
 
 # Data transformation
 df['Date'] = pd.to_datetime(df['date']).dt.strftime('%Y-%m-%d')
